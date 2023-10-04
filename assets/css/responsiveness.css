@@ -1,0 +1,44 @@
+@media only screen and (max-width: 1024px){
+    #icon2{
+        display: none;
+        margin: 0;
+    }
+    .formas-align{
+        margin: 0 auto;
+    }
+    #title{
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 920px){
+    .align img{
+        display: none;
+        margin: 0;
+    }
+    .footer-area2{
+        margin: 0 50px 0 50px;
+    }
+}
+@media only screen and (max-width: 573px){
+
+    .formas-align{
+        margin: 50px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .formas-align a{
+        width: 70%;
+        margin: 0 auto;
+    }
+    footer p,
+    footer a{
+        font-size: 13px;
+        margin: 7px 0;
+    }
+    .space-footer img{
+        width: 60px;
+        height: 60px;
+    }
+}

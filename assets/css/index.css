@@ -1,0 +1,93 @@
+.align{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85vh;
+}
+.text-area{
+    background-color: #DF5231;
+    height: 180px;
+    width: 320px;
+    box-shadow: 0px 0px 34px 11px rgba(0, 0, 0, 0.19);
+    border: 5px solid #be4328;
+    border-radius: 26px;
+    color: #FFF;
+    text-align: justify;
+    font-size: 36px;
+    font-weight: 400;
+    padding: 20px;
+    margin-top: 50px;
+}
+.area-button{
+    width: 310px;
+    height: 84px;
+    border-radius: 50px;
+    background: #EE532F;
+    box-shadow: 0px 4px 14px 7px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    transition: .4s ease;
+}
+.area-button:hover{
+    transform: scale(1.1) translateY(-14px);
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+.area-button a{
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: .10em;
+    font-size: 30px;
+    padding: 20px 84px;
+}
+.formas{
+    display: flex;
+    justify-content: space-between;
+}
+.formas-align{
+    margin: 50px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 40px 40px; 
+    grid-template-areas: 
+        ". . ."
+        ". . ."
+        ". . ."; 
+}
+.card img{
+    width: 100%;
+}
+.card{
+    position: relative;
+}
+.title{
+    inset: 0;
+    position: absolute;
+}
+.inner img{
+    aspect-ratio: 9/16;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.card:hover .inner{
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    filter: blur(0.8px);
+}
+.title{
+    transform: translate3d(0%, 70%, 0);
+}
+.card:hover .title{
+    transform: translate3d(0%, 30%, 0);
+}
+.inner, .title{
+    transition: all .5s;
+}
+h2{
+    text-align: center;
+    margin-top: 100px;
+    color: #FFF;
+    font-size: 50px;
+}
